@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Design Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="josefin-sans-main" id="body">
+
+
+  <div class="full-image-wrap" id="fullImageWrap">
+    <div class="gallery-arrow-left-full" id="galleryArrowLeftFull" onclick="backwardArrow()">
+      <button type="button" id="leftButton"> &#x2B98; </button>
+    </div>
+    <div class="full-image-box" id="fullImageBox">
+      <div class="para-box-side solid-black">
+        <div class="para-box-top">
+          <div class="para-box-top no-outline no-margin">
+            <p id="imageTitle" class="image-text-title-full"> </p>
+          </div>
+          <div class="para-box-top no-outline no-margin">
+            <p id="imageDate" class="image-text-date-full"> </p>
+          </div>
+        </div>
+        <div class="para-box-top">
+          <img id="fullImage" src="">
+        </div>
+        <!-- <div class="para-box-top">
+          <p> <span class="bigger-p">Highlights</span> <br>Check out these projects that deserve their own spot!</p>
+        </div> -->
+      </div>
+      <span class="close" onclick="closeFullImage()">Close</span>
+    </div>
+    <div class="gallery-arrow-right-full" id="galleryArrowRightFull" onclick="forwardArrow()">
+      <button type="button" id="rightButton"> &#x2B9A; </button>
+    </div>
+  </div>
+
+  <header>
+    <nav class="nav-links index-links" id="navLinks">
+      <ul>
+        <img class="logo" src="background-img-trans2.png" alt="">
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="content-box" id="contentBox">
+    <div class="para-box-side hBox">
+      <div class="para-box-top hBoxLeft no-outline">
+        <h1>MEHMET S.</h1>
+        <h2>A Multi-Front Digital Designer</h2>
+      </div>
+      <div class="para-box-top no-outline hBoxRight">
+        <p class="italic-p"> "You cannot understand good design if you do not understand people"<br>- Dieter Rams
+        </p>
+      </div>
+    </div>
+
+
+    <div class="para-box-side">
+      <div class="para-box-side no-outline">
+        <div class="para-box-top no-margin no-outline">
+          <p> <span class="bigger-p">Highlights</span> <br>Check out these projects that deserve their own spot!</p>
+          <div class="para-box-side no-outline no-margin"><a href="works.html">
+              <button type="button" id="worksButton">See More!</button> </a> </div>
+        </div>
+
+        <div class="image-box" id="imageBox">
+
+          <div class="image-cover" id="0" onclick="openFullImage(this)">
+            <img class="image" src="./Images/Camera ClipArt.png" alt="">
+            <div class="image-text-title-small">
+              <p class="imageTitleText">Camera</p>
+            </div>
+            <div class="image-text-date-small">
+              <p class="imageDateText"> 10-2024 </p>
+            </div>
+          </div>
+
+          <div class="image-cover" id="1" onclick="openFullImage(this)">
+            <img class="image" src="./Images/hungryRender.jpg" alt="">
+            <div class="image-text-title-small">
+              <p class="imageTitleText">Camera</p>
+            </div>
+            <div class="image-text-date-small">
+              <p class="imageDateText"> 10-2024 </p>
+            </div>
+          </div>
+
+          <div class="image-cover" id="2" onclick="openFullImage(this)">
+            <img class="image" src="./Images/Mercedes AMG.png" alt="">
+            <div class="image-text-title-small">
+              <p class="imageTitleText">Camera</p>
+            </div>
+            <div class="image-text-date-small">
+              <p class="imageDateText"> 10-2024 </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="para-box-side">
+      <div class="para-box-top no-outline">
+        <p> <span class="bigger-p"> Mehmet </span> is a digital designer experienced in manipulating media in the
+          digital atmosphere. Ranging from real-world photography/videography to 2D and 3D design; He is capable of
+          creating logos, posters, brochures, 3D assets, renders and much more. With knowledge in programs such as
+          Photoshop, Lightroom, Premiere Pro, Blender and Maya, he is here to turn your vision into reality!
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
